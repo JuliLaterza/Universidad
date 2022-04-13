@@ -50,13 +50,35 @@ print(resultado)
 def cuadrados(array:list):
     for i in range(len(array)):
         array[i] = array[i]**2
-    return array
-
+    return array, array[-10:]
 
 lista = []
 n = int(input("ingresar número n: "))
 i = 0
 for i in range(n):
-    print(i+1)
-    lista.append(i+1)  
+    #print(i+1)
+    lista.append(i+1)
+
 print(cuadrados(lista))
+#%% Ejercicio 4
+
+def ejercicio4(lista1:list,lista2: list,eliminados:list,resultante:list):
+    for i in lista1:
+        if i in lista2:
+            eliminados.append(i)
+        else:
+            resultante.append(i)
+    
+    return lista1, lista2, eliminados, resultante
+
+
+lista1 = ["gato","perro","pato"]
+
+lista2 = ["perro","ballena","mariposa"]
+
+lista_resultante = []
+
+lista_eliminados = []
+
+
+print(ejercicio4(lista1,lista2,lista_eliminados,lista_resultante))

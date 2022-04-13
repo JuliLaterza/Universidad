@@ -47,15 +47,16 @@ print(resultado)
 
 #%% Ejercicio 3
 
-def cuadrados(array):
-    for i in array:
+def cuadrados(array:list):
+    for i in range(len(array)):
         array[i] = array[i]**2
     return array
 
 
 lista = []
 n = int(input("ingresar número n: "))
-i = 1
+i = 0
 for i in range(n):
-    lista.append(i)    
+    print(i+1)
+    lista.append(i+1)  
 print(cuadrados(lista))

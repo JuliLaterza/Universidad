@@ -45,7 +45,7 @@ num = int(input("Ingresar número a eliminar: "))
 dupli(num,resultado)
 print(resultado)
 
-#%%
+#%% Ejercicio 3
 
 def cuadrados(array):
     for i in array:
@@ -59,12 +59,3 @@ i = 1
 for i in range(n):
     lista.append(i)    
 print(cuadrados(lista))
-
-
-
-#%% Ej 2
-import random
-
-def ej2(lista
-        
-#%%

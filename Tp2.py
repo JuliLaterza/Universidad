@@ -105,7 +105,10 @@ def multiplos(nums:list):
     multi = [i for i in nums if ((i%7) == 0) and not (i%5) == 0]
     return multi
 numeros = []
+
+
 print("Ingresar 2 valores entre A y B para definir un rango.")
 for i in range(int(input("Ingresar valor de A: ")),int(input("Ingresar número B"))):
     numeros.append(i)
+    
 print(multiplos(numeros))

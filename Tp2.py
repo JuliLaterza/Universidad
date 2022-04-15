@@ -82,3 +82,19 @@ lista_eliminados = []
 
 
 print(ejercicio4(lista1,lista2,lista_eliminados,lista_resultante))
+
+
+#%% Ejercicio 5
+
+
+#%% Ejercicio 8
+
+def numImpares(numimp:list):
+    impares = [i for i in numimp if (i%2) != 0]
+    return impares
+
+numeros = []
+for i in range(100,201): #Generar los números del 100-200
+    numeros.append(i)
+
+print(numImpares(numeros))

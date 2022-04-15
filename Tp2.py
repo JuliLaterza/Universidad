@@ -21,9 +21,7 @@ def sumatoria(lista):
     return total
 
 def dupli(valor,lista):
-    
     if valor in lista:
-        print("se encontró el num")
         lista.remove(valor)
     else:
         print("El número no se encuentra en la lista")
@@ -38,8 +36,8 @@ def capicua(lista):
 lista = [50,17,91,17,50]
 
 resultado = funA(random.randint(10,99))
-print(resultado)
-print(sumatoria(resultado))
+print("lista generada \n",resultado)
+print("la sumatoria es ",sumatoria(resultado))
 print(capicua(lista))
 num = int(input("Ingresar número a eliminar: "))
 dupli(num,resultado)
@@ -110,5 +108,5 @@ numeros = []
 print("Ingresar 2 valores entre A y B para definir un rango.")
 for i in range(int(input("Ingresar valor de A: ")),int(input("Ingresar número B"))):
     numeros.append(i)
-    
+
 print(multiplos(numeros))
